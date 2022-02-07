@@ -11,8 +11,6 @@ public class CengPokeParser {
 	{
 		ArrayList<CengPoke> pokeList = new ArrayList<>();
 
-		// You need to parse the input file in order to use GUI tables.
-		// TODO: Parse the input file, and convert them into CengPokes
 		String curline;
 		String[] data;
 
@@ -58,13 +56,5 @@ public class CengPokeParser {
 				CengPokeKeeper.printEverything();
 			}
 		}
-		// There are 5 commands:
-		// 1) quit : End the app. Print nothing, call nothing.
-		// 2) add : Parse and create the poke, and call CengPokeKeeper.addPoke(newlyCreatedPoke).
-		// 3) search : Parse the pokeKey, and call CengPokeKeeper.searchPoke(parsedKey).
-		// 4) delete: Parse the pokeKey, and call CengPokeKeeper.removePoke(parsedKey).
-		// 5) print : Print the whole hash table with the corresponding buckets, call CengPokeKeeper.printEverything().
-
-		// Commands (quit, add, search, print) are case-insensitive.
 	}
 }
