@@ -13,8 +13,6 @@ public class CengPoke {
 		this.pokeType = pokeType;
 	}
 	
-	// Getters
-	
 	public Integer pokeKey()
 	{
 		return pokeKey;
@@ -32,13 +30,8 @@ public class CengPoke {
 		return pokeType;
 	}
 		
-	// GUI method - do not modify
 	public String fullName()
 	{
 		return "" + pokeKey() + "\t" + pokeName() + "\t" + pokePower() + "\t" + pokeType;
 	}
-
-
-	// Own Methods
-
 }
