@@ -63,10 +63,7 @@ public class CengHashTable {
 			target = table.get(index).getBucket();
 		}
 
-		//System.out.println(hashVal);
-		//System.out.println(index);
-
-		if(!target.isFull()){					//add
+		if(!target.isFull()){
 			target.addPoke(poke);
 		}
 		else{
@@ -122,12 +119,6 @@ public class CengHashTable {
 				old.setBucket(n1);
 				addPoke(poke);
 			}
-
-			// BURADA TABLE'I GENISLETME ISLEMI YAPILMALI.
-			// BUCKETLAR BAGLANDIKTAN SONRA MEVCUT BUCKET KONTROL EDILMELI.
-			// EGER FULL DEGILSE target.addpoke(poke);
-			// ROWCOUNT GUNCELLE
-			// GLOBAL DEPTH VE HEDEF BUCKET'IN LOCAL DEPTH'INI GUNCELLE
 		}
 	}
 
@@ -187,9 +178,6 @@ public class CengHashTable {
 
 		System.out.println(tag);
 	}
-
-	// GUI-Based Methods
-	// These methods are required by GUI to work properly.
 
 	public int prefixBitCount()
 	{
