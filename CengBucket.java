@@ -3,8 +3,6 @@ import java.util.List;
 
 public class CengBucket {
 
-	// GUI-Based Methods
-	// These methods are required by GUI to work properly.
 	private ArrayList<CengPoke> bucket;
 	private String prefix;
 	private int depth;
