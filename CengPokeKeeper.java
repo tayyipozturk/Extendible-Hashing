@@ -87,8 +87,6 @@ public class CengPokeKeeper {
 		hashTable.print();
 		bucketList.print();
 	}
-	
-	// GUI Methods
 
 	private static void updateWindow()
 	{
